@@ -1,0 +1,155 @@
+<header >
+  <div class="contenedor_header">
+    <nav>
+      <a routerLink="./app-registro" class="navegacion_registro">Registro</a>
+    </nav>
+    <section class="titulo_principal">
+          <h2>Primeros Pasos en Informática</h2>
+          <h3> Mis Apuntes del Primer Semestre</h3>
+    </section>     
+    <div class="fig_ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C220.93,167.28 251.41,-45.86 501.41,55.77 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg></div>
+  </div>
+  
+</header>
+  
+  <section class="caja informacion">
+    <div class="caja_informacion_especifica">
+      <div class="titulo_info_1">
+        <h1>Bienvenidos a Primeros Pasos en Informática</h1>
+        <h5>En Primeros Pasos en Informática, Forjamos el Éxito en el Mundo de la Informática.</h5>
+        <p class="parrafo">Bienvenidos, nuevos estudiantes de informática. En este viaje educativo, nos enorgullece ser su guía, ofreciendo no solo información detallada sobre las materias que cursarán, sino también un ecosistema enriquecedor que les brindará el apoyo necesario para triunfar en su primer semestre universitario.</p>
+      </div>
+      <figure class="imagen_info_1">
+        <img [src]="'assets/img/img_texto.jpg'" alt="Imagen Nosotros" class="imagen_nosotros_1"/>
+      </figure>         
+    </div>  
+  </section>
+
+  <section class="ancho">
+  <section class="caja info_rapida">
+    <h1 class="caja_3_info">Construye tu Camino</h1> 
+    <div class="caja_3_enseñar" >
+      
+      <div class="caja_intro">
+        <figure class="caja_imagen">
+          <img [src]="'assets/img/computer-_1_.svg'" alt="Imagen_intro_2" class="imagen_intro"/>
+        </figure>
+        <h5>DESAROLLA</h5>
+        <p>Aquí, la creatividad y la codificación se encuentran para dar vida a tus ideas. Desarrolla tus habilidades, transforma tu imaginación en código y despierta el creador que llevas dentro.</p>
+      </div>
+      <div class="caja_intro">
+        <figure class="caja_imagen">
+          <img [src]="'assets/img/hacker.svg'" alt="Imagen_intro_2" class="imagen_intro"/>
+        </figure>
+          <h5>APRENDE</h5>
+          <p>En nuestra plataforma, aprender es más que adquirir información; es descubrir, experimentar y desafiar tus límites. ¿Listo para convertirte en un maestro de la tecnología? </p>
+      </div>
+      <div class="caja_intro">
+        <figure class="caja_imagen">
+          <img [src]="'assets/img/monitor.svg'" alt="Imagen_intro_2" class="imagen_intro"/>
+        </figure>
+        <h5>SUPERATE</h5>
+        <p> Supérate a ti mismo cada día, resuelve problemas complejos, y conquista los desafíos que se presentan. Aquí no solo construimos líneas de código, sino también puentes hacia el futuro.</p>
+      </div>   
+    </div>
+  </section>
+  </section>
+
+  
+  <section class="caja materia">
+    <h1 class="titulo_materia">Explora nuestros cursos disponibles</h1>
+    <div class="caja_materias">
+      <div class="materia_1">
+        <div class="img_materia_1">
+          <img [src]="'assets/img/img_prin14.jpg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_1">
+          <h2 class="title">Programacion I</h2>
+          <p class="parrafo_m">La programación es el arte de dar instrucciones a las computadoras para que realicen tareas específicas. Es como enseñar a una máquina a hablar tu idioma.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(1)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_2">
+        <div class="img_materia_2">
+          <img [src]="'assets/img/img_prin2.jpg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_2">
+          <h2 class="title">Programacion Web I</h2>
+          <p class="parrafo_m">La programación web es el arte de crear y mantener sitios web, en su esencia implica dar vida a las páginas que ves en tu navegador mediante el uso de lenguajes de programación.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(2)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_3">
+        <div class="img_materia_3">
+          <img [src]="'assets/img/img_prin9.jpg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_3">
+          <h2 class="title">Fubdamentos Digitales </h2>
+          <p class="parrafo_m">Son los principios y conceptos básicos relacionados con la representación y manipulación de información en formato digital.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(3)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_4">
+        <div class="img_materia_4">
+          <img [src]="'assets/img/img_prin21.jpg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_4">
+          <h2 class="title">Algebra</h2>
+          <p class="parrafo_m">El álgebra es una rama de las matemáticas que estudia las operaciones y las propiedades de los números y las letras
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(4)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_5">
+        <div class="img_materia_5">
+          <img [src]="'assets/img/img_prin22.jpg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_5">
+          <h2 class="title">Fisica I</h2>
+          <p class="parrafo_m">
+            La Física 1 es la rama de la ciencia que se enfoca en los fundamentos básicos de la mecánica y el movimiento.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(5)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_6">
+        <div class="img_materia_6">
+          <img [src]="'assets/img/img_prin20.jpg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_6">
+          <h2 class="title">Calculo I</h2>
+          <p class="parrafo_m">El cálculo es una rama de las matemáticas que se ocupa del estudio de las tasas de cambio y acumulación, así como de las propiedades de las funciones.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(6)"> Quiero acceder al curso</button>
+        </div> 
+      </div>  
+    </div> 
+  </section>
+  
+  <footer>
+    <div class="social">
+      <div class="social_text">
+        <h2>Contactanos </h2>
+        <p class="social_parrafo">Encuéntranos en cualquiera de nuestras redes sociales para estar al tanto de las últimas novedades</p>
+        <div class="social_link">
+          <a href="https://www.facebook.com/UMSAinformacion" class="link_social"><img [src]="'assets/img/img_social2.svg'" alt="Imagen_Social" class="imagen_social"/></a>
+          <a href="https://www.instagram.com/umsa_oficial" class="link_social"><img [src]="'assets/img/img_social3.svg'" alt="Imagen_Social" class="imagen_social"/></a>
+          <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FUMSA_Oficial" class="link_social"><img [src]="'assets/img/img_social1.svg'" alt="Imagen_Social" class="imagen_social"/></a>
+          
+        </div>
+      </div>
+      <figure class="social_img">
+        <img [src]="'assets/img/imagenredes.png'" alt="Imagen_Social" class="social_imagen"/>
+      </figure>
+    </div>
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 391.52,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill:white;"></path></svg></div>
+  </footer>
